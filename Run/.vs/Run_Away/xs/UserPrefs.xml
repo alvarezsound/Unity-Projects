@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{42CA3558-E96F-1784-E5AC-63546A1E243F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="27" Column="14" />
+      <File FileName="Assets/Scripts/EnemyController.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="81" Column="1" />
+      <File FileName="Assets/Scripts/Restart.cs" />
+      <File FileName="Assets/Scripts/SceneTransition.cs" />
+      <File FileName="Assets/Scripts/AudioController.cs" Line="7" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Run_Away" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="GameController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6422e9c1-6f18-4d1e-9b8f-5a057a0aa0a4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
