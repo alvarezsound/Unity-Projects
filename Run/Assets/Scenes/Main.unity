@@ -448,6 +448,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &115296629 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 543690180096183897, guid: d568bc634231642d0ae5a815d3e4da0c, type: 3}
+  m_PrefabInstance: {fileID: 543690181810470821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &127238531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1605025218, guid: 345663e86a7f60545b8ec4a8ef734d07, type: 3}
@@ -867,6 +872,8 @@ GameObject:
   - component: {fileID: 304014387}
   - component: {fileID: 304014386}
   - component: {fileID: 304014385}
+  - component: {fileID: 304014389}
+  - component: {fileID: 304014388}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -989,6 +996,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304014383}
   m_CullTransparentMesh: 1
+--- !u!114 &304014388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304014383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 304014389}
+          m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 304014389}
+          m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &304014389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304014383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31699aa9ea36e4f84b9a6044240f23f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioController: {fileID: 115296629}
+  hoverSound: {fileID: 8300000, guid: 4cad565424703441f81033bd6395fde1, type: 3}
+  clickSound: {fileID: 8300000, guid: 9da279e8b053b40c1b90addc54f5deca, type: 3}
 --- !u!1 &368073438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 634944641240757438, guid: 5d1b0f53facb86747a21079050aff993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07559074
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 634944641240757438, guid: 5d1b0f53facb86747a21079050aff993, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2883,6 +2950,9 @@ MonoBehaviour:
   countdownTime: 3
   countdownText: {fileID: 1216542403}
   timeCounter: {fileID: 380810184}
+  audioController: {fileID: 115296629}
+  timerSound: {fileID: 8300000, guid: cbc08596a8cfe446aaee0d6cc8203fe4, type: 3}
+  goSound: {fileID: 8300000, guid: b29f2b45efd2a45dcbc3c4374f26447a, type: 3}
 --- !u!1 &1216542401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4946,6 +5016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 543690180096183896, guid: d568bc634231642d0ae5a815d3e4da0c, type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 543690180096183900, guid: d568bc634231642d0ae5a815d3e4da0c, type: 3}
       propertyPath: m_Name
       value: AudioController

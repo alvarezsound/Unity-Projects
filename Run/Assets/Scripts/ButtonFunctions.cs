@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ButtonFunctions : MonoBehaviour
 {
-    public AudioSource mySounds;
+    public AudioSource audioController;
     public AudioClip hoverSound;
     public AudioClip clickSound;
 
     public void HoverSound()
     {
-        mySounds.PlayOneShot(hoverSound);
+        AudioController.instance.Play(hoverSound);
     }
     public void ClickSound()
     {
-        mySounds.PlayOneShot(clickSound);
+        AudioController.instance.Play(clickSound);
     }
 }

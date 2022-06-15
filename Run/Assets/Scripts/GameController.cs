@@ -20,6 +20,10 @@ public class GameController : MonoBehaviour
 
     public bool gamePlaying { get; private set; }
 
+    public AudioSource audioController;
+    public AudioClip timerSound;
+    public AudioClip goSound;
+
     private void Awake()
     {
         instance = this;
@@ -72,12 +76,19 @@ public class GameController : MonoBehaviour
     {
         while (countdownTime > 0)
         {
+            // Play timer sound at each number
+            AudioController.instance.Play(timerSound);
+
             countdownText.text = countdownTime.ToString();
 
             yield return new WaitForSeconds(1f);
 
             countdownTime--;
+
         }
+
+        //Play go sound
+        AudioController.instance.Play(goSound);
 
         countdownText.text = "RUN!!";
 
