@@ -21,6 +21,8 @@ As a challenge, I was given 2 days to create an original game, complete with art
 ## Mini Solar System
 This is an animated model of the Sun, Earth, and Moons orbit using assets I found on the Unity assets store. I used a point light and area light to recreate the lighting of the Sun and how it shines on the Earth and Moon as they orbit. The objects rotate as they orbit around each other to demonstrate how our solar system operates.
 
+![Solar System](/Images/MiniSolarSystem.png)
+
 ## Unity Fundamentals
 This project was a part of the Unity 2018 Fundamentals course on Pluralsight. It started off with prototyping the general game ideas based on a game design document. From there, I created a basic level using ProBuilder. Finally I imported the final art assets, configured prefabs, added various lighting, created VFX, character animations, UI, and implemented audio.
 
