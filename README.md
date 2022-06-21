@@ -15,7 +15,7 @@ As a challenge, I was given 2 days to create an original game, complete with art
 
 ![Run Pic](/Images/Run_Title.png)
 
-![Run Pic](/Images/Run_Countdown.png)
+![Run Pic](/Images/Run_Gameplay.png)
 
 ![Run Pic](/Images/Run_GameOver.png)
 ## Mini Solar System
