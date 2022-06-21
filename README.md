@@ -11,17 +11,12 @@ This is the repository for all of my Unity course projects! Click the links belo
 After completing the Unity course, I participated in a two-week sprint working on a small dev team. We were each tasked with remaking a classic arcade game. As a fan, I chose Frogger and used the original Frogger as a guide. The game is complete with a title, main game, victory, and game over scenes (pictured below). I recreated and modified the original pixel art to fit a brighter theme. I added some simple animations, created custom sound effects, and added some copyright free music.
 
 Gameplay:
-The player starts at the bottom of the screen and must guide five frogs to each of the five homes at the top of the screen while avoiding obstacles on the road and staying on platforms over the water. Die three times and it's game over or bring all five frogs home and you win! The player can use either WASD or arrow keys to move the frog one block at a time.
+The player starts at the bottom of the screen and must guide five frogs to each of the five homes at the top of the screen while avoiding obstacles on the road and staying on platforms over the water. Die three times and its game over or bring all five frog’s home and you win! The player can use either WASD or arrow keys to move the frog one block at a time.
 
 Score:
 Every forward step scores 10 points, and every frog arriving safely home scores 50 points. 10 points are also awarded per each unused ½ second of time. When all five frogs reach home to end the level the player earns 1,000 points
 
-
-
-
-
-Code highlights:
-Below are just a few code snippets within the numerous scripts that were created for the game.
+Code highlights - below are just a few code snippets within the numerous scripts that were created for the game:
 
 I created a script to control the movement of the obstacles and platforms. Once attaching the script to the game object, the speed and direction can easily be modified.
 MoveCycle.cs 
@@ -133,7 +128,7 @@ public void HomeOccupied()
 Finally, I created an audio manager script as a singleton to attach to an empty that game object/audio source so it never gets destroyed when entering/exiting different scenes. Once the first audio manager object was set up. I made it a prefab and added it to every scene.
 AudioManager.cs
 ```cs
-public class AudioMngr : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
     public AudioSource audioManager;
 
@@ -164,14 +159,19 @@ public class AudioMngr : MonoBehaviour
 }
 ```
 
+![Frogger](/Images/Frogger_Title.png)
+![Frogger](/Images/Frogger_Game.png)
+![Frogger](/Images/Frogger_Victory.png)
+![Frogger](/Images/Frogger_GameOver.png)
+
 ## Run!!
 As a challenge, I was given 2 days to create an original game, complete with art and a full gameplay loop. I created Run!!, a game of tag between a cute duck and a jealous penguin. Players take control of the duck (using mouse clicks for movement) and have to keep away from the penguin for as long as possible. The game is complete with a title and ending screen. The game starts with a 3 second countdown (player and enemy movement is frozen) and then the game starts and the penguin begins to hunt the player. There is a timer that starts at the end of the countdown and stops as soon as you are captured. Your final time is displayed on the end screen. I also added a few UI sounds, countdown sounds, music, and ambience.
 
-![Run Pic](/Images/Run_Title.png)
+![Run](/Images/Run_Title.png)
 
-![Run Pic](/Images/Run_Gameplay.png)
+![Run](/Images/Run_Gameplay.png)
 
-![Run Pic](/Images/Run_GameOver.png)
+![Run](/Images/Run_GameOver.png)
 ## Mini Solar System
 This is an animated model of the Sun, Earth, and Moons orbit using assets I found on the Unity assets store. I used a point light and area light to recreate the lighting of the Sun and how it shines on the Earth and Moon as they orbit. The objects rotate as they orbit around each other to demonstrate how our solar system operates.
 
