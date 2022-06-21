@@ -1,7 +1,7 @@
 # Unity-Projects
 This is the repository for all of my Unity course projects! Click the links below to view the files.
 ## Projects:
-- <a href="" target="_blank">Frogger</a>
+- [Frogger](#Frogger)
 - <a href="https://github.com/alvarezsound/Unity-Projects/tree/main/Run" target="_blank">Run!!</a>
 - <a href="https://github.com/alvarezsound/Unity-Projects/tree/main/Mini_Solar_System" target="_blank">Mini Solar System</a>
 - <a href="https://github.com/alvarezsound/Unity-Projects/tree/main/Unity_Fundamentals" target="_blank">Unity Fundamentals</a>
