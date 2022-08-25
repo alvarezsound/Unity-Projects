@@ -187,6 +187,5 @@ This project was a part of the Unity 2018 Fundamentals course on Pluralsight. It
 ## Ball Motion
 This was a rapid unity assignment to create a simple maze game from scratch using Unity's built-in 3D game objects. The player takes control of a ball and navigates through a 3D maze course to find the exit.
 
-
-
+Back to [top](#Unity-Projects)
 
